@@ -5,15 +5,15 @@
 from sklearn.neighbors import KNeighborsClassifier
 from DM import DataMining
 
-d=DataMining()
-knn = KNeighborsClassifier(n_neighbors=2,p=2,metric="minkowski")
-knn.fit(d.X_train_std,d.y_train)
+d = DataMining()
+knn = KNeighborsClassifier(n_neighbors=2, p=2, metric="minkowski")
+knn.fit(d.X_train_std, d.y_train)
 d.predict(knn)
 
-knn = KNeighborsClassifier(n_neighbors=50,p=2,metric="minkowski")
-knn.fit(d.X_train_std,d.y_train)
+knn = KNeighborsClassifier(n_neighbors=50, p=2, metric="minkowski")
+knn.fit(d.X_train_std, d.y_train)
 d.predict(knn)
 
-knn = KNeighborsClassifier(n_neighbors=100,p=2,metric="minkowski")
-knn.fit(d.X_train_std,d.y_train)
+knn = KNeighborsClassifier(n_neighbors=100, p=2, metric="minkowski")
+knn.fit(d.X_train_std, d.y_train)
 d.predict(knn)
